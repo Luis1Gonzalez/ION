@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*background: red;*/
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#container {
+  padding: 3px;
+  background-image: url("imagen/fondo-marmol.jpg");
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto);
+  grid-template-areas:
+    "uno"
+    "dos"
+    "tres";
+}
+
+#cabecera {
+  grid-area: uno;
+  width: 100%;
+  /*background: grey;*/
+  display: grid;
+  grid-template-rows: 100px 40px;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas:
+    "memb"
+    "navi";
+  padding: 5px 0;
+}
+
+#membrete {
+  grid-area: memb;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 4px;
+  font-style: oblique;
+}
+
+#navegacion {
+  grid-area: navi;
+  line-height: 40px;
+  /*background: red;*/
+}
+
+.navbar {
+  /*background: grey;*/
+  height: inheritpx;
+}
+
+#central {
+  grid-area: dos;
+  width: 100%;
+  /*background: peru;*/
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "apartado1"
+    "apartado2"
+    "apartado3";
+}
+
+#apart1 {
+  grid-area: apartado1;
+  width: 100%;
+  /*background: violet;*/
+  margin: 5px 0px;
+  padding: 5px;
+}
+
+.carousel-caption h5 {
+  color: #5e2129;
+}
+
+.desc-carousel {
+  color: #5e2129;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#apart2 {
+  grid-area: apartado2;
+  width: 100%;
+  /*background: purple;*/
+  margin: 5px 0px;
+  color: white;
+  padding: 5px;
+}
+
+.calidad {
+  text-align: center;
+  color: #000;
+  padding: 10px;
+}
+
+#apart3 {
+  grid-area: apartado3;
+  width: 100%;
+  /*background: silver;*/
+  margin: 5px 0px;
+  padding: 5px;
+}
+
+.materiales {
+  text-align: center;
+  color: #000;
+  padding: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: repeat(2, 100%);
+  grid-template-areas:
+    "rede"
+    "cop";
+  /*background: white;*/
+  color: #444;
+  padding: 15px;
+}
+
+.copy {
+  grid-area: cop;
+  text-align: center;
+}
+
+.redes {
+  grid-area: rede;
+  display: grid;
+  grid-template-areas:
+    "twi ins fac";
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+hr {
+  color: #444;
+  margin-top: 30px;
+  margin-bottom;
+  30px;
+}
+
+@media screen and (min-width:480px) {
+  body {
+    background: green;
+  }
+}
+
+@media screen and (min-width:767px) {
+  body {
+    background: yellow;
+  }
+}
+
+@media screen and (min-width:950px) {
+  body {
+    background: blue;
+  }
+}
