@@ -78,7 +78,6 @@ body {
 }
 
 .desc-carousel {
-  color: #5e2129;
   text-align: center;
   padding: 10px;
   font-size: 20px;
@@ -138,6 +137,10 @@ footer {
     "twi ins fac";
   justify-content: space-around;
   font-size: 20px;
+}
+
+p{
+  color:#5e2129;
 }
 
 hr {
