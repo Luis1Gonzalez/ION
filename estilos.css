@@ -71,6 +71,7 @@ body {
   /*background: violet;*/
   margin: 5px 0px;
   padding: 5px;
+  border-bottom: 1px solid silver;
 }
 
 .carousel-caption h5 {
@@ -80,6 +81,7 @@ body {
 .desc-carousel {
   text-align: center;
   padding: 10px;
+
 }
 
 #apart2 {
@@ -89,6 +91,7 @@ body {
   margin: 5px 0px;
   color: white;
   padding: 5px;
+  border-bottom: 1px solid silver;
 }
 
 .calidad {
@@ -103,6 +106,7 @@ body {
   /*background: silver;*/
   margin: 5px 0px;
   padding: 5px;
+  border-bottom: 1px solid silver;
 }
 
 .materiales {
@@ -143,18 +147,58 @@ p {
   font-weight: 600;
 }
 
-hr {
-  color: #444;
-  margin-top: 30px;
-  margin-bottom:30px;
-  30px;
-}
+
 
 @media screen and (min-width:480px) {
   body {
     background: green;
   }
+
+  #apart1 {
+    grid-area: apartado1;
+    width: 100%;
+    /*background: violet;*/
+    margin: 5px 0px;
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-areas:
+    "caro1 caro2";
+    align-items:center;
+  }
+
+  #apart2{
+    grid-area:apartado2;
+    display:grid;
+    grid-template-columns: 1fr 40%;
+    grid-template-areas:
+    "cal1 cal2";
+    align-items:center;
+  }
+
+.calidad-imagen{
+  grid-area:cal1;
 }
+
+.calidad{
+  grid-area:cal2;
+}
+
+#apart3{
+  grid-area:apartado3;
+  display:grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-areas:
+  "mat1 mat2";
+  align-items:center;
+}
+}
+
+
+
+
+
+
 
 @media screen and (min-width:767px) {
   body {
