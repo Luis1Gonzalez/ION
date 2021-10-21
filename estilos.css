@@ -8,6 +8,10 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+body a{
+  text-decoration:none;
+}
+
 #container {
   padding: 3px;
   background-image: url("imagen/fondo-marmol.jpg");
@@ -37,20 +41,29 @@ body {
   grid-area: memb;
   text-align: center;
   line-height: 100px;
-  font-family: 'Lobster', cursive;
-  letter-spacing: 4px;
+  font-family: 'Fredericka the Great', cursive;
+  color:brown;
   font-style: oblique;
+  letter-spacing: 5px;
+  font-weight:600;
+  font-size:13px;
+  text-shadow: 0px 5px 5px peru;
 }
 
 #navegacion {
   grid-area: navi;
   line-height: 40px;
   /*background: red;*/
+  font-size:25px;
 }
 
 .navbar {
   /*background: grey;*/
   height: inheritpx;
+}
+
+.navbar a:hover{
+  font-size:30px;
 }
 
 #central {
@@ -78,6 +91,15 @@ body {
   color: #5e2129;
 }
 
+.carousel{
+  margin-bottom:30px;
+}
+
+.carousel-item h5:hover{
+  font-size:23px;
+  text-shadow: 0px 0px 3px aqua;
+}
+
 .desc-carousel {
   text-align: center;
   padding: 10px;
@@ -100,6 +122,11 @@ body {
   padding: 10px;
 }
 
+.calidad-imagen{
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
 #apart3 {
   grid-area: apartado3;
   width: 100%;
@@ -115,6 +142,11 @@ body {
   padding: 10px;
 }
 
+.materiales-imagen{
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
 footer {
   display: grid;
   grid-template-rows: 50px;
@@ -125,6 +157,7 @@ footer {
   /*background: white;*/
   color: #444;
   padding: 15px;
+  margin-top:15px;
 }
 
 .copy {
@@ -141,6 +174,25 @@ footer {
   font-size: 20px;
 }
 
+footer .redes a{
+  text-decoration: none;
+}
+
+#twi{
+    color:#1C9CEB;
+}
+#ins a{
+  text-decoration: none;
+}
+
+#fac{
+  color:#4064AC;
+}
+
+#ins{
+  color:#A149C8;
+}
+
 p {
   color: #5e2129;
   font-size: 20px;
@@ -152,6 +204,12 @@ p {
 @media screen and (min-width:480px) {
   body {
     background: green;
+  }
+
+  #membrete{
+    letter-spacing: 8px;
+    font-weight:600;
+    font-size:30px;
   }
 
   #apart1 {
